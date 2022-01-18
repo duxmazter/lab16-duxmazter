@@ -7,12 +7,11 @@ void shuffle(int *,int *,int *,int *);
 
 int main(){
 	int a = 50, b = 100, c = 500, d = 1000;
-	int *w = &a, *x = &b, *y = &c, *z = &d;
 	
 	srand(time(0));	
 	
 	for(int i = 0;i < 10;i++){
-	    shuffle(w,x,y,z); 
+	    shuffle(&a,&b,&c,&d); 
 	    cout << a << " " << b << " " << c << " " << d << "\n";
 	}
 	
